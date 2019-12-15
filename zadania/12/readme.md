@@ -1,86 +1,39 @@
-## Generatory
+## Iteratory
 
-### Prosty generator `yield`
+### Itarator w napisie
 
-#### Przeszkształć funkcję w prosty generator krzyczący `pomocy!!` następnie go przetestuj
-
+#### Użyj iteratora występującego napisie `ITERATOR`;
 
 ```javascript
-   function prostyGenerator(){}
+const napis = "ITERATOR";
 ```
 
-### Więcej niż jeden `yield`
+### Itarator w tablicy
 
-#### Do generatora dopisz krzyk `To nie są ćwiczenia!` przetestuj w konsoli.
+#### Użyj iteratora występującego tablicy
 
 ```javascript
-   //kod z poprzedniego zadania
+const friends = ["Leonard", "Stan", "Sheldon"];
 ```
 
-### Przypisanie wartości do `yield`
+### Itarator w literale obiektu
 
-#### Nie zmieniając naszego generatora wykonaj działanie `40 + 2` przypisując odpoowienio wartości do `a` oraz `b`
+#### Do podanego obiektu dopisz iterator następnie sprawdź czy będziesz mógł użyć rozsypania na obiekcie
 
 ```javascript
-   //kod z poprzedniego zadania
-   function* sum(){
-     const a = yield;
-     const b = yield;
-     const result = a + b;
-
-     yield result;
-   }
+const user = {
+  friends: ["Leonard", "Stan", "Sheldon"]
+};
 ```
 
-### Przypisanie z `yield`
+### Itarator w definicji klasy
 
-#### Nie zmieniając naszego generatora wykonaj działanie `40 + 2` przypisując odpoowienio wartości do `a` oraz `b`
-
-```javascript
-   function* sum(){
-     const a = yield;
-     const b = yield;
-     const result = a + b;
-
-     yield result;
-   }
-```
-
-### Iteracja z `yield`
-
-#### Zmień generator tak aby każde jego wywołanie pobierało jedną literę z `name`
+#### Do podanej klasy dopisz iterator następnie stwórz jej instancję i rozsyp do konsoli
 
 ```javascript
-   function* getLetter(){
-      const name = 'Franek';
-      yield name;
-   }
-```
-
-### Przypisanie z `yield`
-
-#### Zmień generator tak aby każde jego wywołanie dodało jeden z trzech elementów tablicy
-
-> Kick off
-
-```javascript
-   function* fillArray(){
-      const friends = yield;
-   }
-
-   //Po trzech wywołaniach generatora friends ma wyglądać tak ['Adam','Franek','Robert']
-```
-
-### Rzucanie i zwracanie
-
-#### Nie zmieniając generatora zakończ jego pracę tak aby zwrócił wartość `150`
-
-> Kick off
-
-```javascript
-   function* count(){
-      yield '1';
-      yield '2';
-      yield '3';
-   }
+class User {
+  constructor() {
+    this.friends = ["Leonard", "Stan", "Sheldon"];
+  }
+}
 ```

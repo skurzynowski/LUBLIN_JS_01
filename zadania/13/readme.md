@@ -1,38 +1,86 @@
-## Obietnice
+## Generatory
 
-### Prosta obietnica
+### Prosty generator `yield`
 
-#### Zmień funkcję aby zwracała obietnicę sprawdź jej stan
+#### Przeszkształć funkcję w prosty generator krzyczący `pomocy!!` następnie go przetestuj
+
 
 ```javascript
-  const getPromise = () => {}
+   function prostyGenerator(){}
 ```
 
+### Więcej niż jeden `yield`
 
-### Statyczne rozwiązanie i odrzucenia
-
-#### Użyj statycznej metody `resolve` i `reject` w poniższej funkcji tak aby metoda zwracała rozwiązaną lub odrzuconą obietnicę
+#### Do generatora dopisz krzyk `To nie są ćwiczenia!` przetestuj w konsoli.
 
 ```javascript
-  const getPromise = () => {}
+   //kod z poprzedniego zadania
 ```
 
-### `then` i co wtedy??
+### Przypisanie wartości do `yield`
 
-#### Poniższa funkcja zwraca obiekt typu `Promise`. Pobierz z niego dane oraz obsłuż ewentualny błąd.
+#### Nie zmieniając naszego generatora wykonaj działanie `40 + 2` przypisując odpoowienio wartości do `a` oraz `b`
 
 ```javascript
-import {getUser} from '../userApi';
+   //kod z poprzedniego zadania
+   function* sum(){
+     const a = yield;
+     const b = yield;
+     const result = a + b;
 
-getUser();
+     yield result;
+   }
 ```
 
-### `then` jako łańcuchy
+### Przypisanie z `yield`
 
-#### Do poprzedniego zadania dopisz kolejną funkjcję `then` tak aby uzyskała dane z obietnicy
+#### Nie zmieniając naszego generatora wykonaj działanie `40 + 2` przypisując odpoowienio wartości do `a` oraz `b`
 
 ```javascript
-import {getUser} from '../userApi';
+   function* sum(){
+     const a = yield;
+     const b = yield;
+     const result = a + b;
 
-getUser();
+     yield result;
+   }
+```
+
+### Iteracja z `yield`
+
+#### Zmień generator tak aby każde jego wywołanie pobierało jedną literę z `name`
+
+```javascript
+   function* getLetter(){
+      const name = 'Franek';
+      yield name;
+   }
+```
+
+### Przypisanie z `yield`
+
+#### Zmień generator tak aby każde jego wywołanie dodało jeden z trzech elementów tablicy
+
+> Kick off
+
+```javascript
+   function* fillArray(){
+      const friends = yield;
+   }
+
+   //Po trzech wywołaniach generatora friends ma wyglądać tak ['Adam','Franek','Robert']
+```
+
+### Rzucanie i zwracanie
+
+#### Nie zmieniając generatora zakończ jego pracę tak aby zwrócił wartość `150`
+
+> Kick off
+
+```javascript
+   function* count(){
+      yield '1';
+      yield '2';
+      yield '3';
+   }
 ```

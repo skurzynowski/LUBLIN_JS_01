@@ -1,16 +1,16 @@
 const path = require("path");
-const entryPath = "zadania/12";
 const entryFile = "index.js";
 
-module.exports = {
-  entry: `./${entryPath}/${entryFile}`,
+module.exports = env => ({
+  entry: `./zadania/${env.ex}/index.js`,
+  mode: 'development',
   output: {
-    filename: "out.js",
-    path: path.resolve(__dirname, `${entryPath}/build`)
-  },
+     filename: 'bundle.js',
+     path: path.resolve(__dirname, 'dist'),
+    },
   devServer: {
-    contentBase: path.join(__dirname, `${entryPath}`),
-    publicPath: "/build/",
+    contentBase: __dirname,
+    publicPath: "/dist/",
     compress: true,
     port: 3001
   },
@@ -23,4 +23,4 @@ module.exports = {
       }
     ]
   }
-};
+});
