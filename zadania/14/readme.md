@@ -22,7 +22,7 @@
 #### Poniższa funkcja zwraca obiekt typu `Promise`. Pobierz z niego dane oraz obsłuż ewentualny błąd.
 
 ```javascript
-import {getUser} from '../userApi';
+import {getUser} from './UserApi';
 
 getUser();
 ```
@@ -32,7 +32,7 @@ getUser();
 #### Do poprzedniego zadania dopisz kolejną funkjcję `then` tak aby uzyskała dane z obietnicy
 
 ```javascript
-import {getUser} from '../userApi';
+import {getUser} from './UserApi';
 
 getUser();
 ```

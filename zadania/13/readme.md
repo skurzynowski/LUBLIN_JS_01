@@ -19,7 +19,7 @@
 
 ### Przypisanie wartości do `yield`
 
-#### Nie zmieniając naszego generatora wykonaj działanie `40 + 2` przypisując odpoowienio wartości do `a` oraz `b`
+#### Nie zmieniając naszego generatora wykonaj działanie `40 + 2` przypisując odpowienio wartości do `a` oraz `b`
 
 ```javascript
    //kod z poprzedniego zadania

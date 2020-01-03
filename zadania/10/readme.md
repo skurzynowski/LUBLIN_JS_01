@@ -42,7 +42,7 @@ console.log(all.age);
 
 ### Exportowanie
 
-#### Wyeksportuj funkcję `printAge` z pliku `user.js` następnie zaimportuj i wywołaj ją w `index.jx` z parametrem `42`
+#### Wyeksportuj funkcję `printAge` z pliku `user.js` następnie zaimportuj i wywołaj ją w `index.jsx` z parametrem `42`
 
 ```javascript
  const printAge = ( age ) => { console.log(`Wiek wynosi ${age}`) }
