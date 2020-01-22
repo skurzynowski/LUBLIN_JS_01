@@ -1,4 +1,4 @@
-## Moduły
+## Modules
 
 ### Import
 

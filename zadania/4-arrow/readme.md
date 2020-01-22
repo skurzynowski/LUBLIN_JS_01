@@ -1,4 +1,4 @@
-## Funkcja strzałkowa
+## Fat arrow - funkcja strzalkowa
 
 
 > Dwa czynniki, które wpłynęły na wprowadzenie funkcji strzałkowych: krótszy zapis funkcji i brak wiązania **this**.

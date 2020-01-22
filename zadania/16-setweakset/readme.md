@@ -1,4 +1,4 @@
-## Set i WeakSet
+## SetWeakSet
 
 ### Set: Stwórz prosty set składający się z wartości z tablicy `arr`. Następnie sprawdź jego długość. Dodaj ponownie wartość `1` i sprawdź długość.
 

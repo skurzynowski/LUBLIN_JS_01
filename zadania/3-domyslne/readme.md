@@ -1,4 +1,4 @@
-## Wartości domyślne
+## Domyslne Wartosci
 
 
 ### Definiowanie w funkcji
